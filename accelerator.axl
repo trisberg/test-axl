@@ -1,0 +1,7 @@
+engine {
+
+  TextPreprocessor()
+
+  ReplaceText({{text: "test-axl", with: #artifactId }})
+
+}

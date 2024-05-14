@@ -1,0 +1,21 @@
+accelerator:
+  displayName: Test AXL
+  description: A test of new syntax
+  iconUrl: https://seeklogo.com/images/S/simpsons-axl-rose-logo-D9DD00D3FC-seeklogo.com.png
+  tags:
+  - tanzu
+
+  # options for the UI
+  options:
+  - name: comment
+    inputType: text
+    label: A Test Comment
+    defaultValue: Foo Bar
+  - name: tests
+    inputType: checkbox
+    dataType: boolean
+    label: Support tests
+    defaultValue: false
+
+  imports:
+  - name: tap-workload
