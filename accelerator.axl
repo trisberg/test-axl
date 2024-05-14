@@ -2,6 +2,8 @@ engine {
 
   TextPreprocessor()
 
-  ReplaceText({{text: "test-axl", with: #artifactId }})
+  applyTo("config/workload.yaml" || "README.md") {
+    ReplaceText({{text: "test-axl", with: #artifactId }})
+  }
 
 }
